@@ -7,6 +7,6 @@ export default defineConfig({
   preview: {
     host: true, // allows external access
     port: process.env.PORT || 4173, // lets Render bind to the correct port
-    allowedHosts: ['druginfoappui-1.onrender.com'], // your Render domain
+    allowedHosts: ['druginfoappui-3.onrender.com'], // your Render domain
   },
 })
