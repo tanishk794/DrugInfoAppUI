@@ -1,12 +1,64 @@
-# React + Vite
+Drug Information Dashboard - Frontend
+A React application for browsing pharmaceutical drug data with infinite scroll and company filtering.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Infinite Scroll - Load data as you scroll
 
-Currently, two official plugins are available:
+Company Filtering - Filter drugs by pharmaceutical company
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Responsive Design - Works on all devices
 
-## Expanding the ESLint configuration
+Modern UI - Material-UI components
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tech Stack
+React 18 + Vite
+
+Material-UI (MUI)
+
+Custom Hooks
+
+date-fns
+
+📁 Project Structure
+text
+src/
+├── assets/
+│   ├── Components/          # UI components
+│   └── CustomHooks/         # Business logic hooks
+├── App.jsx                  # Main component
+└── config.js               # API configuration
+
+
+Quick Start
+Install dependencies
+
+bash
+npm install
+Configure API URL
+
+javascript
+// src/config.js
+const config = {
+  API_BASE_URL: 'http://localhost:3000' // Your backend URL
+};
+Start development
+
+bash
+npm run dev
+📝 Scripts
+bash
+npm run dev      # Start dev server
+npm run build    # Build for production
+npm run preview  # Preview build
+🔧 API Endpoints
+GET /api/drug - Paginated drug data
+
+GET /api/companies - Company list
+
+Deployment
+Render/Vercel/Netlify:
+
+Build: npm install && npm run build
+
+Publish: dist folder
+
